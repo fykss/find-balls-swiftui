@@ -7,23 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E1334AE2577E55C00455797 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1334AD2577E55C00455797 /* BackgroundView.swift */; };
 		9E202951256D78A300A318BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E202950256D78A300A318BF /* AppDelegate.swift */; };
 		9E202953256D78A300A318BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E202952256D78A300A318BF /* SceneDelegate.swift */; };
 		9E202955256D78A300A318BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E202954256D78A300A318BF /* ContentView.swift */; };
-		9E202957256D78AD00A318BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E202956256D78AD00A318BF /* Assets.xcassets */; };
 		9E20295A256D78AD00A318BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E202959256D78AD00A318BF /* Preview Assets.xcassets */; };
 		9E20295D256D78AD00A318BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E20295B256D78AD00A318BF /* LaunchScreen.storyboard */; };
+		9EAE39D92576B2FA004A7483 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE39D82576B2FA004A7483 /* WelcomeView.swift */; };
+		9EAE39E12576E552004A7483 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE39E02576E552004A7483 /* Color.swift */; };
+		9EAE39E52576E6EA004A7483 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE39E42576E6EA004A7483 /* Constants.swift */; };
+		9EAE39F02576F38A004A7483 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE39EF2576F389004A7483 /* VisualEffectView.swift */; };
+		9EAE39F62577B6DD004A7483 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE39F52577B6DD004A7483 /* TabBar.swift */; };
+		9EAE9A2C2577D99C00F0AB8A /* BackgroundUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE9A2B2577D99C00F0AB8A /* BackgroundUIView.swift */; };
+		9EAE9A312577E20800F0AB8A /* LightFall.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9EAE9A2F2577E20700F0AB8A /* LightFall.sks */; };
+		9EAE9A322577E20800F0AB8A /* LightFallBig.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9EAE9A302577E20800F0AB8A /* LightFallBig.sks */; };
+		9EB7BEC225792EB600250139 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EB7BEC125792EB600250139 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9E20294D256D78A300A318BF /* find-balls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "find-balls.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E1334AD2577E55C00455797 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		9E20294D256D78A300A318BF /* Find Balls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find Balls.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E202950256D78A300A318BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E202952256D78A300A318BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9E202954256D78A300A318BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		9E202956256D78AD00A318BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E202959256D78AD00A318BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9E20295C256D78AD00A318BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E20295E256D78AD00A318BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EAE39D82576B2FA004A7483 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		9EAE39E02576E552004A7483 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		9EAE39E42576E6EA004A7483 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9EAE39EF2576F389004A7483 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
+		9EAE39F52577B6DD004A7483 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		9EAE9A2B2577D99C00F0AB8A /* BackgroundUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundUIView.swift; sourceTree = "<group>"; };
+		9EAE9A2F2577E20700F0AB8A /* LightFall.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LightFall.sks; sourceTree = "<group>"; };
+		9EAE9A302577E20800F0AB8A /* LightFallBig.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LightFallBig.sks; sourceTree = "<group>"; };
+		9EB7BEC125792EB600250139 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,10 +55,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E1334AC2577E4F500455797 /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				9E1334AD2577E55C00455797 /* BackgroundView.swift */,
+			);
+			path = Reusables;
+			sourceTree = "<group>";
+		};
+		9E1334B22577EFEF00455797 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				9EB7BEC125792EB600250139 /* Assets.xcassets */,
+				9E1334B32577EFFD00455797 /* Animations */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		9E1334B32577EFFD00455797 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				9EAE9A302577E20800F0AB8A /* LightFallBig.sks */,
+				9EAE9A2F2577E20700F0AB8A /* LightFall.sks */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 		9E202944256D78A300A318BF = {
 			isa = PBXGroup;
 			children = (
-				9E20294F256D78A300A318BF /* find-balls */,
+				9E20294F256D78A300A318BF /* Find Balls */,
 				9E20294E256D78A300A318BF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,23 +92,28 @@
 		9E20294E256D78A300A318BF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9E20294D256D78A300A318BF /* find-balls.app */,
+				9E20294D256D78A300A318BF /* Find Balls.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9E20294F256D78A300A318BF /* find-balls */ = {
+		9E20294F256D78A300A318BF /* Find Balls */ = {
 			isa = PBXGroup;
 			children = (
+				9EAE39E72576E786004A7483 /* Actions */,
+				9EAE39E32576E6D2004A7483 /* Utilities */,
+				9E1334AC2577E4F500455797 /* Reusables */,
+				9EAE39DF2576E542004A7483 /* Extentions */,
+				9E1334B22577EFEF00455797 /* Content */,
 				9E202950256D78A300A318BF /* AppDelegate.swift */,
 				9E202952256D78A300A318BF /* SceneDelegate.swift */,
 				9E202954256D78A300A318BF /* ContentView.swift */,
-				9E202956256D78AD00A318BF /* Assets.xcassets */,
+				9EAE39F52577B6DD004A7483 /* TabBar.swift */,
 				9E20295B256D78AD00A318BF /* LaunchScreen.storyboard */,
 				9E20295E256D78AD00A318BF /* Info.plist */,
 				9E202958256D78AD00A318BF /* Preview Content */,
 			);
-			path = "find-balls";
+			path = "Find Balls";
 			sourceTree = "<group>";
 		};
 		9E202958256D78AD00A318BF /* Preview Content */ = {
@@ -75,12 +124,54 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9EAE39DF2576E542004A7483 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				9EAE39E02576E552004A7483 /* Color.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		9EAE39E32576E6D2004A7483 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9EAE9A2B2577D99C00F0AB8A /* BackgroundUIView.swift */,
+				9EAE39E42576E6EA004A7483 /* Constants.swift */,
+				9EAE39EF2576F389004A7483 /* VisualEffectView.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		9EAE39E72576E786004A7483 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				9EAE39E92576E7C4004A7483 /* Home */,
+				9EAE39E82576E7B9004A7483 /* Welcome */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		9EAE39E82576E7B9004A7483 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				9EAE39D82576B2FA004A7483 /* WelcomeView.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		9EAE39E92576E7C4004A7483 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9E20294C256D78A300A318BF /* find-balls */ = {
+		9E20294C256D78A300A318BF /* Find Balls */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9E202961256D78AD00A318BF /* Build configuration list for PBXNativeTarget "find-balls" */;
+			buildConfigurationList = 9E202961256D78AD00A318BF /* Build configuration list for PBXNativeTarget "Find Balls" */;
 			buildPhases = (
 				9E202949256D78A300A318BF /* Sources */,
 				9E20294A256D78A300A318BF /* Frameworks */,
@@ -90,9 +181,9 @@
 			);
 			dependencies = (
 			);
-			name = "find-balls";
+			name = "Find Balls";
 			productName = "find-balls";
-			productReference = 9E20294D256D78A300A318BF /* find-balls.app */;
+			productReference = 9E20294D256D78A300A318BF /* Find Balls.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -109,7 +200,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9E202948256D78A300A318BF /* Build configuration list for PBXProject "find-balls" */;
+			buildConfigurationList = 9E202948256D78A300A318BF /* Build configuration list for PBXProject "Find Balls" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -122,7 +213,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9E20294C256D78A300A318BF /* find-balls */,
+				9E20294C256D78A300A318BF /* Find Balls */,
 			);
 		};
 /* End PBXProject section */
@@ -134,7 +225,9 @@
 			files = (
 				9E20295D256D78AD00A318BF /* LaunchScreen.storyboard in Resources */,
 				9E20295A256D78AD00A318BF /* Preview Assets.xcassets in Resources */,
-				9E202957256D78AD00A318BF /* Assets.xcassets in Resources */,
+				9EAE9A312577E20800F0AB8A /* LightFall.sks in Resources */,
+				9EAE9A322577E20800F0AB8A /* LightFallBig.sks in Resources */,
+				9EB7BEC225792EB600250139 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,9 +238,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E1334AE2577E55C00455797 /* BackgroundView.swift in Sources */,
 				9E202951256D78A300A318BF /* AppDelegate.swift in Sources */,
+				9EAE39D92576B2FA004A7483 /* WelcomeView.swift in Sources */,
+				9EAE39F02576F38A004A7483 /* VisualEffectView.swift in Sources */,
+				9EAE39F62577B6DD004A7483 /* TabBar.swift in Sources */,
 				9E202953256D78A300A318BF /* SceneDelegate.swift in Sources */,
+				9EAE9A2C2577D99C00F0AB8A /* BackgroundUIView.swift in Sources */,
+				9EAE39E12576E552004A7483 /* Color.swift in Sources */,
 				9E202955256D78A300A318BF /* ContentView.swift in Sources */,
+				9EAE39E52576E6EA004A7483 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +316,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,15 +387,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"find-balls/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Find Balls/Preview Content\"";
 				DEVELOPMENT_TEAM = YAN4DT9JX2;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "find-balls/Info.plist";
+				INFOPLIST_FILE = "Find Balls/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vladyslavlietun.find-balls";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vladyslavlietun.findballs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -308,15 +408,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"find-balls/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Find Balls/Preview Content\"";
 				DEVELOPMENT_TEAM = YAN4DT9JX2;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "find-balls/Info.plist";
+				INFOPLIST_FILE = "Find Balls/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vladyslavlietun.find-balls";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vladyslavlietun.findballs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -326,7 +426,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9E202948256D78A300A318BF /* Build configuration list for PBXProject "find-balls" */ = {
+		9E202948256D78A300A318BF /* Build configuration list for PBXProject "Find Balls" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9E20295F256D78AD00A318BF /* Debug */,
@@ -335,7 +435,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9E202961256D78AD00A318BF /* Build configuration list for PBXNativeTarget "find-balls" */ = {
+		9E202961256D78AD00A318BF /* Build configuration list for PBXNativeTarget "Find Balls" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9E202962256D78AD00A318BF /* Debug */,
