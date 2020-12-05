@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  Find Balls
+
+  Created by Vladyslav Lietun on 04.12.2020.
+  
+*/
+
+
+"AppName" = "Find Balls";
+
+// Welcome View
+"WelcomeTitle" = "Welcome";
+"WelcomeDescription" = "Here you can test your knowledge and skills in sports. Show everyone what you are capable of and win prizes!";
+"WelcomeTitleButton" = "Get started";
+"WelcomePrivacy" = "Your privacy is our top concern. By clicking \"Get started\" you confirm that you're read and accepted our Terms and Privacy Policy";

@@ -1,0 +1,35 @@
+//
+//  LoadingView.swift
+//  Find Balls
+//
+//  Created by Vladyslav Lietun on 05.12.2020.
+//
+
+import SwiftUI
+
+struct LoadingView: View {
+    var body: some View {
+        ZStack {
+            Text(LocalizedStringKey(LocalizableKeys.appName))
+                .font(.custom(FontName.helveticaNeueBold, size: Size.titleFontSize))
+                .foregroundColor(.white)
+            VStack {
+                Spacer()
+                LottieView(filename: AnimationName.loading, loop: true)
+                    .frame(width: animationSize, height: animationSize, alignment: .center)
+            }
+        }
+        .padding()
+    }
+    
+    let animationSize: CGFloat = 120
+}
+
+struct LoadingView_Previews: PreviewProvider {
+    static var previews: some View {
+        ZStack {
+            Color.green.edgesIgnoringSafeArea(.all)
+            LoadingView()
+        }
+    }
+}

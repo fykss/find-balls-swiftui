@@ -12,8 +12,6 @@ import SpriteKit
 struct BackgroundUIView: UIViewRepresentable {
 
     let imageName: String
-    let blur: Bool
-    let blurStyle: UIBlurEffect.Style?
     let animationName: String?
     
     func makeUIView(context: Context) -> some UIView {
@@ -43,13 +41,6 @@ struct BackgroundUIView: UIViewRepresentable {
             sk.presentScene(scene)
             
             backgroundView.addSubview(lightFallAnimationView)
-        }
-        
-        if blur {
-            let blur = UIVisualEffectView(effect: UIBlurEffect(style: blurStyle ?? .dark))
-            blur.frame = backgroundView.frame
-            
-            backgroundView.addSubview(blur)
         }
         
         return backgroundView

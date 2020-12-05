@@ -9,8 +9,14 @@ import Foundation
 import SwiftUI
 
 extension Color {
+
+    public static let purpleGradientDark: Color = { return Color(hex: "#743DEC") }()
     
-    public static let customBlueLight: Color = { return Color(hex: "#3F9ADFff") }()
+    public static let purpleGradientLight: Color = { return Color(hex: "#a35cf7") }()
+    
+    public static let customBlueLight: Color = { return Color(hex: "#3F9ADF") }()
+    
+    public static let customLightGray: Color = { return Color(hex: "#E5E5E5") }()
     
     init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
