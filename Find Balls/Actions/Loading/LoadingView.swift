@@ -8,28 +8,49 @@
 import SwiftUI
 
 struct LoadingView: View {
+    
+    @EnvironmentObject var viewRouter: ViewRouter
+    
+    @State private var loadingCompleted = false
+    
     var body: some View {
         ZStack {
-            Text(LocalizedStringKey(LocalizableKeys.appName))
-                .font(.custom(FontName.helveticaNeueBold, size: Size.titleFontSize))
-                .foregroundColor(.white)
-            VStack {
-                Spacer()
-                LottieView(filename: AnimationName.loading, loop: true)
-                    .frame(width: animationSize, height: animationSize, alignment: .center)
+            GeometryReader { geometry in
+                BackgroundUIView(imageName: ImageName.backgroundWithoutBallView, animationName: AnimationName.lightFallBig)
+                    .frame(maxWidth: geometry.size.width, maxHeight: geometry.size.height)
+                
+                VisualEffectView(effect: UIBlurEffect(style: .dark))
+                    .edgesIgnoringSafeArea(.all)
+            }
+            
+            LoadingContentView()
+                .offset(x: loadingCompleted ? -Device.screenFrame.width : 0, y: 0)
+            
+            if UserDefaults.standard.bool(forKey: UserDataKey.getStarted) == false {
+                WelcomeView()
+                    .offset(x: loadingCompleted ? 0 : Device.screenFrame.width, y: 0)
+            } else {
+                ContentView()
+                    .offset(x: loadingCompleted ? 0 : Device.screenFrame.width, y: 0)
             }
         }
-        .padding()
+        .preferredColorScheme(.dark)
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                withAnimation {
+                    // Get Data
+                    loadingCompleted = true
+                    let generator = UIImpactFeedbackGenerator(style: .medium)
+                    generator.prepare()
+                    generator.impactOccurred()
+                }
+            }
+        }
     }
-    
-    let animationSize: CGFloat = 120
 }
 
-struct LoadingView_Previews: PreviewProvider {
+struct StartView_Previews: PreviewProvider {
     static var previews: some View {
-        ZStack {
-            Color.green.edgesIgnoringSafeArea(.all)
-            LoadingView()
-        }
+        LoadingView()
     }
 }

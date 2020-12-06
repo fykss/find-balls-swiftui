@@ -9,7 +9,11 @@ import SwiftUI
 import UIKit
 
 struct WelcomeView: View {
+    
+    @EnvironmentObject var viewRouter: ViewRouter
+    
     var body: some View {
+        
         VStack {
             Spacer()
             Text(LocalizedStringKey(LocalizableKeys.welcomeTitle))
@@ -23,7 +27,9 @@ struct WelcomeView: View {
                 .padding(.horizontal, 25)
             
             Button(action: {
-                print(Device.edgeInsets!)
+                withAnimation {
+                    viewRouter.currentScreen = .home
+                }
             }, label: {
                 Text(LocalizedStringKey(LocalizableKeys.welcomeTitleButton))
                     .font(.custom(FontName.helveticaNeueBold, size: Size.defaultFontSize))
@@ -39,6 +45,7 @@ struct WelcomeView: View {
         }
         .padding(.horizontal)
         .padding(.bottom)
+        .animation(Animation.interpolatingSpring(mass: 1.0, stiffness: 100.0, damping: 15, initialVelocity: 0))
         .frame(width: Device.isIphone ? Device.screenFrame.width : Device.screenFrame.width / 1.5)
         .multilineTextAlignment(.center)
     }

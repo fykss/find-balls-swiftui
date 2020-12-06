@@ -40,3 +40,7 @@ struct FontName {
     static let helveticaNeue = "Helvetica Neue"
     static let helveticaNeueBold = "Helvetica Neue Bold"
 }
+
+struct UserDataKey {
+    static let getStarted = "getStarted"
+}

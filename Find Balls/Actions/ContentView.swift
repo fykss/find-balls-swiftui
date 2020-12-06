@@ -9,9 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-//        CustomTabView()
-//            .navigationBarHidden(true)
-        WelcomeView()
+        CustomTabView()
+            .navigationBarHidden(true)
     }
 }
 
@@ -30,8 +29,8 @@ struct CustomTabView: View {
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom), content: {
 
             ZStack {
-                WelcomeView()
-//                Email()
+//                WelcomeView()
+                Email()
 //                Settings()
             }
             
@@ -46,6 +45,7 @@ struct CustomTabView: View {
             }
             .zIndex(1)
             .padding(.horizontal, 25)
+            .frame(width: Device.isIphone ? Device.screenFrame.width * 0.9 : Device.screenFrame.width / 1.5)
             .padding(.vertical, 5)
             .background(
                 VisualEffectView(effect: UIBlurEffect(style: .light))
@@ -53,9 +53,13 @@ struct CustomTabView: View {
             .clipShape(Capsule())
             .shadow(color: Color.black.opacity(0.15), radius: 5, x: 5, y: 5)
             .shadow(color: Color.black.opacity(0.15), radius: 5, x: -5, y: -5)
-            .padding(.horizontal)
             .padding(.bottom, 20)
         })
+        .edgesIgnoringSafeArea(.all)
+        .animation(Animation.interpolatingSpring(mass: 1.0, stiffness: 100.0, damping: 15, initialVelocity: 0))
+        .onAppear {
+            UserDefaults.standard.set(true, forKey: UserDataKey.getStarted)
+        }
     }
 }
 
@@ -78,7 +82,16 @@ struct TabButton: View {
 
 struct Email: View {
     var body: some View {
-        Text("Email")
+        ZStack {
+            GeometryReader { geometry in
+                BackgroundUIView(imageName: ImageName.backgroundWithoutBallView, animationName: AnimationName.lightFall)
+                    .frame(maxWidth: geometry.size.width, maxHeight: geometry.size.height)
+                    .clipped()
+            }
+            Button("Reset First Entry") {
+                UserDefaults.standard.set(false, forKey: UserDataKey.getStarted)
+            }
+        }
     }
 }
 
