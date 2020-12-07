@@ -31,6 +31,14 @@
 		9EAE9A312577E20800F0AB8A /* LightFall.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9EAE9A2F2577E20700F0AB8A /* LightFall.sks */; };
 		9EAE9A322577E20800F0AB8A /* LightFallBig.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9EAE9A302577E20800F0AB8A /* LightFallBig.sks */; };
 		9EB7BEC225792EB600250139 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EB7BEC125792EB600250139 /* Assets.xcassets */; };
+		9ED0D3B8257D47F7004B3F88 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9ED0D3B7257D47F7004B3F88 /* GoogleService-Info.plist */; };
+		9ED0D3BB257D487E004B3F88 /* FirestoreReferenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED0D3BA257D487E004B3F88 /* FirestoreReferenceManager.swift */; };
+		9ED0D3BF257D4893004B3F88 /* FirebaseKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED0D3BE257D4893004B3F88 /* FirebaseKeys.swift */; };
+		9ED0D3C2257D48BB004B3F88 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED0D3C1257D48BB004B3F88 /* FirebaseManager.swift */; };
+		9ED0D432257D50D4004B3F88 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ED0D431257D50D4004B3F88 /* GameKit.framework */; };
+		9ED0D439257D54B4004B3F88 /* GameCenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED0D438257D54B4004B3F88 /* GameCenterManager.swift */; };
+		9ED0D43C257D66D8004B3F88 /* LoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED0D43B257D66D8004B3F88 /* LoadingViewModel.swift */; };
+		9ED0D460257E71D8004B3F88 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED0D45F257E71D7004B3F88 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +72,15 @@
 		9EAE9A2F2577E20700F0AB8A /* LightFall.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LightFall.sks; sourceTree = "<group>"; };
 		9EAE9A302577E20800F0AB8A /* LightFallBig.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LightFallBig.sks; sourceTree = "<group>"; };
 		9EB7BEC125792EB600250139 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9ED0D3B7257D47F7004B3F88 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9ED0D3BA257D487E004B3F88 /* FirestoreReferenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreReferenceManager.swift; sourceTree = "<group>"; };
+		9ED0D3BE257D4893004B3F88 /* FirebaseKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseKeys.swift; sourceTree = "<group>"; };
+		9ED0D3C1257D48BB004B3F88 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		9ED0D431257D50D4004B3F88 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		9ED0D438257D54B4004B3F88 /* GameCenterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterManager.swift; sourceTree = "<group>"; };
+		9ED0D43B257D66D8004B3F88 /* LoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewModel.swift; sourceTree = "<group>"; };
+		9ED0D45C257E6C3D004B3F88 /* Find Balls.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Find Balls.entitlements"; sourceTree = "<group>"; };
+		9ED0D45F257E71D7004B3F88 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +89,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C1A3E36F0D50EFA86453903 /* Pods_Find_Balls.framework in Frameworks */,
+				9ED0D432257D50D4004B3F88 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +99,7 @@
 		4A6566A8B6B7E1C53595BB63 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9ED0D431257D50D4004B3F88 /* GameKit.framework */,
 				47D21CCF9CD67401CCAEF8B1 /* Pods_Find_Balls.framework */,
 			);
 			name = Frameworks;
@@ -135,15 +154,18 @@
 		9E20294F256D78A300A318BF /* Find Balls */ = {
 			isa = PBXGroup;
 			children = (
+				9ED0D45C257E6C3D004B3F88 /* Find Balls.entitlements */,
 				9EAE39E72576E786004A7483 /* Actions */,
 				9EAE39E32576E6D2004A7483 /* Utilities */,
 				9E1334AC2577E4F500455797 /* Reusables */,
+				9ED0D45E257E71C7004B3F88 /* Models */,
 				9EAE39DF2576E542004A7483 /* Extentions */,
 				9E1334B22577EFEF00455797 /* Content */,
 				9E5F62BA257A813000119D83 /* Localization */,
 				9E202950256D78A300A318BF /* AppDelegate.swift */,
 				9E202952256D78A300A318BF /* SceneDelegate.swift */,
 				9EAE39F52577B6DD004A7483 /* TabBar.swift */,
+				9ED0D3B7257D47F7004B3F88 /* GoogleService-Info.plist */,
 				9E20295B256D78AD00A318BF /* LaunchScreen.storyboard */,
 				9E20295E256D78AD00A318BF /* Info.plist */,
 				9E202958256D78AD00A318BF /* Preview Content */,
@@ -164,6 +186,7 @@
 			children = (
 				9E5D89DE257BB2620098EF31 /* LoadingView.swift */,
 				9E5D89D7257BA7370098EF31 /* LoadingContentView.swift */,
+				9ED0D43B257D66D8004B3F88 /* LoadingViewModel.swift */,
 			);
 			path = Loading;
 			sourceTree = "<group>";
@@ -190,6 +213,10 @@
 			children = (
 				9EAE39E42576E6EA004A7483 /* Constants.swift */,
 				9EAE39EF2576F389004A7483 /* VisualEffectView.swift */,
+				9ED0D3C1257D48BB004B3F88 /* FirebaseManager.swift */,
+				9ED0D3BE257D4893004B3F88 /* FirebaseKeys.swift */,
+				9ED0D3BA257D487E004B3F88 /* FirestoreReferenceManager.swift */,
+				9ED0D438257D54B4004B3F88 /* GameCenterManager.swift */,
 				9E5D89D2257BA6570098EF31 /* LottieView.swift */,
 			);
 			path = Utilities;
@@ -221,6 +248,14 @@
 			children = (
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		9ED0D45E257E71C7004B3F88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9ED0D45F257E71D7004B3F88 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		C6E029D0E42128803DF23E51 /* Pods */ = {
@@ -293,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E20295D256D78AD00A318BF /* LaunchScreen.storyboard in Resources */,
+				9ED0D3B8257D47F7004B3F88 /* GoogleService-Info.plist in Resources */,
 				9E5D89DB257BA77C0098EF31 /* Loading.json in Resources */,
 				9E5F62BE257A81A900119D83 /* Localizable.strings in Resources */,
 				9E20295A256D78AD00A318BF /* Preview Assets.xcassets in Resources */,
@@ -351,6 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ED0D3BB257D487E004B3F88 /* FirestoreReferenceManager.swift in Sources */,
 				9E202951256D78A300A318BF /* AppDelegate.swift in Sources */,
 				9EAE39D92576B2FA004A7483 /* WelcomeView.swift in Sources */,
 				9E531CDD2579521C00776DEB /* GradientButtonStyle.swift in Sources */,
@@ -358,12 +395,17 @@
 				9EA19B8D257CE6E80002516A /* FindBallsApp.swift in Sources */,
 				9EAE39F62577B6DD004A7483 /* TabBar.swift in Sources */,
 				9E202953256D78A300A318BF /* SceneDelegate.swift in Sources */,
+				9ED0D439257D54B4004B3F88 /* GameCenterManager.swift in Sources */,
 				9EA19B90257CE8450002516A /* ViewRouter.swift in Sources */,
+				9ED0D460257E71D8004B3F88 /* User.swift in Sources */,
+				9ED0D3C2257D48BB004B3F88 /* FirebaseManager.swift in Sources */,
 				9EAE9A2C2577D99C00F0AB8A /* BackgroundUIView.swift in Sources */,
 				9EAE39E12576E552004A7483 /* Color.swift in Sources */,
 				9E202955256D78A300A318BF /* ContentView.swift in Sources */,
+				9ED0D3BF257D4893004B3F88 /* FirebaseKeys.swift in Sources */,
 				9E5F62C3257A861100119D83 /* LocalizableKeys.swift in Sources */,
 				9EAE39E52576E6EA004A7483 /* Constants.swift in Sources */,
+				9ED0D43C257D66D8004B3F88 /* LoadingViewModel.swift in Sources */,
 				9E5D89D8257BA7370098EF31 /* LoadingContentView.swift in Sources */,
 				9E5D89D3257BA6570098EF31 /* LottieView.swift in Sources */,
 				9E5D89DF257BB2620098EF31 /* LoadingView.swift in Sources */,
@@ -518,6 +560,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Find Balls/Find Balls.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Find Balls/Preview Content\"";
 				DEVELOPMENT_TEAM = YAN4DT9JX2;
@@ -527,7 +570,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vladyslavlietun.findballs;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vladyslavlietun.FindBall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -540,6 +583,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Find Balls/Find Balls.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Find Balls/Preview Content\"";
 				DEVELOPMENT_TEAM = YAN4DT9JX2;
@@ -549,7 +593,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vladyslavlietun.findballs;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vladyslavlietun.FindBall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

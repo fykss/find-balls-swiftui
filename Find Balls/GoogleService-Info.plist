@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>894694519741-25fbarudrljggd9aih4chpsiss7q3gmo.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.894694519741-25fbarudrljggd9aih4chpsiss7q3gmo</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAykOCFf6JFUzrpyHTVk7auRn0eIZcTSYE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>894694519741</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.vladyslavlietun.FindBall</string>
+	<key>PROJECT_ID</key>
+	<string>findball-9876a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>findball-9876a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:894694519741:ios:857395a10c43012faf58d4</string>
+	<key>DATABASE_URL</key>
+	<string>https://findball-9876a.firebaseio.com</string>
+	<key>ADMOB_APP_ID</key>
+	<string>ca-app-pub-5914933885626299~9103354542</string>
+</dict>
+</plist>

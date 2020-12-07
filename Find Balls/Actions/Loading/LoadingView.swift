@@ -13,6 +13,12 @@ struct LoadingView: View {
     
     @State private var loadingCompleted = false
     
+    let firebaseManager: FirebaseManager
+    
+    init() {
+        self.firebaseManager = FirebaseManager()
+    }
+    
     var body: some View {
         ZStack {
             GeometryReader { geometry in
