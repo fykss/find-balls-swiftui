@@ -7,6 +7,9 @@
 
 import Foundation
 
-struct User {
+struct User: Encodable {
     var uid: String
+    var username: String
+    var email: String
+    var date: Date
 }

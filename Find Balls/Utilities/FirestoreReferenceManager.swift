@@ -17,6 +17,33 @@ struct FirestoreReferenceManager {
     static func referenceForRoot() -> DocumentReference {
         return root
     }
+    
+    static func referenceForUserData(uid: String) -> DocumentReference {
+        return root.collection(FirebaseKeys.CollectionPath.users).document(uid)
+    }
+    
+    static func referenceForUserStatistics(uid: String, challengeId: String) -> DocumentReference {
+        return root
+            .collection(FirebaseKeys.CollectionPath.users).document(uid)
+            .collection(FirebaseKeys.CollectionPath.statistics).document(challengeId)
+    }
+    
+    static func referenceForCupsActivities(uid: String) -> CollectionReference {
+        return root
+            .collection(FirebaseKeys.CollectionPath.users).document(uid)
+            .collection(FirebaseKeys.CollectionPath.cupsActivities)
+    }
+    
+    static func referenceForTransactions(uid: String) -> CollectionReference {
+        return root
+            .collection(FirebaseKeys.CollectionPath.users).document(uid)
+            .collection(FirebaseKeys.CollectionPath.transactions)
+    }
+    
+    static func referenceForRanks(challengeId: String) -> DocumentReference {
+        return root
+            .collection(FirebaseKeys.CollectionPath.ranks).document(challengeId)
+    }
 }
 
 

@@ -13,6 +13,8 @@ struct LoadingView: View {
     
     @State private var loadingCompleted = false
     
+    @ObservedObject var viewModel = LoadingViewModel()
+    
     let firebaseManager: FirebaseManager
     
     init() {
@@ -29,6 +31,18 @@ struct LoadingView: View {
                     .edgesIgnoringSafeArea(.all)
             }
             
+            GKAuthenticationView { (state) in
+                if state != .succeeded { self.viewModel.showModal = true }
+
+            } failed: { (error) in
+                self.viewModel.showAlert(title: "Authentication Failed", message: error.localizedDescription)
+            } authenticated: { (playerName) in
+                loadingCompleted = true
+                let generator = UIImpactFeedbackGenerator(style: .medium)
+                generator.prepare()
+                generator.impactOccurred()
+            }
+            
             LoadingContentView()
                 .offset(x: loadingCompleted ? -Device.screenFrame.width : 0, y: 0)
             
@@ -42,15 +56,36 @@ struct LoadingView: View {
         }
         .preferredColorScheme(.dark)
         .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                withAnimation {
-                    // Get Data
+            self.viewModel.load()
+        }
+        .sheet(isPresented: self.$viewModel.showModal) {
+            if self.viewModel.activeSheet == .authentication {
+                GKAuthenticationView { (state) in
+                    switch state {
+                    case .started:
+                        break
+                    case .failed:
+                        break
+                    case .deauthenticated:
+                        break
+                    case .succeeded:
+                        break
+                    }
+                } failed: { (error) in
+                    self.viewModel.showAlert(title: "Authentication Failed", message: error.localizedDescription)
+                } authenticated: { (playerName) in
+                    self.viewModel.showModal = false
                     loadingCompleted = true
                     let generator = UIImpactFeedbackGenerator(style: .medium)
                     generator.prepare()
                     generator.impactOccurred()
                 }
             }
+        }
+        .alert(isPresented: self.$viewModel.showAlert) {
+            Alert(title: Text(self.viewModel.alertTitle),
+                  message: Text(self.viewModel.alertMessage),
+                  dismissButton: .default(Text("Ok")))
         }
     }
 }
