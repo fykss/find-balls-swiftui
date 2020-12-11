@@ -10,7 +10,7 @@ import Combine
 
 class LoadingViewModel: ObservableObject {
 
-    @Published public var activeSheet :ContentViewSheet = .authentication
+    @Published public var activeSheet: ContentViewSheet = .authentication
     @Published public var showModal = false
     @Published public var showAlert = false
     @Published public var alertTitle: String = ""

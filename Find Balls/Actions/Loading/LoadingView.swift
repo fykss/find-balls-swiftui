@@ -9,33 +9,21 @@ import SwiftUI
 
 struct LoadingView: View {
     
-    @EnvironmentObject var viewRouter: ViewRouter
-    
     @State private var loadingCompleted = false
     
     @ObservedObject var viewModel = LoadingViewModel()
     
-    let firebaseManager: FirebaseManager
-    
-    init() {
-        self.firebaseManager = FirebaseManager()
-    }
-    
     var body: some View {
         ZStack {
-            GeometryReader { geometry in
-                BackgroundUIView(imageName: ImageName.backgroundWithoutBallView, animationName: AnimationName.lightFallBig)
-                    .frame(maxWidth: geometry.size.width, maxHeight: geometry.size.height)
-                
-                VisualEffectView(effect: UIBlurEffect(style: .dark))
-                    .edgesIgnoringSafeArea(.all)
-            }
+            LoadingBackgroundView()
             
             GKAuthenticationView { (state) in
                 if state != .succeeded { self.viewModel.showModal = true }
 
             } failed: { (error) in
                 self.viewModel.showAlert(title: "Authentication Failed", message: error.localizedDescription)
+                // Notify anonymous user
+                // TODO: Auth anonymously
             } authenticated: { (playerName) in
                 loadingCompleted = true
                 let generator = UIImpactFeedbackGenerator(style: .medium)

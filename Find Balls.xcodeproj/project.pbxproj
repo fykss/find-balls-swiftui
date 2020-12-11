@@ -14,6 +14,7 @@
 		9E20295A256D78AD00A318BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E202959256D78AD00A318BF /* Preview Assets.xcassets */; };
 		9E20295D256D78AD00A318BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E20295B256D78AD00A318BF /* LaunchScreen.storyboard */; };
 		9E399CFD25828E3900C247B7 /* GKAuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E399CFC25828E3800C247B7 /* GKAuthenticationView.swift */; };
+		9E399D402583FFA600C247B7 /* LoadingBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E399D3F2583FFA600C247B7 /* LoadingBackgroundView.swift */; };
 		9E531CDD2579521C00776DEB /* GradientButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E531CDC2579521C00776DEB /* GradientButtonStyle.swift */; };
 		9E5D89D3257BA6570098EF31 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D89D2257BA6570098EF31 /* LottieView.swift */; };
 		9E5D89D8257BA7370098EF31 /* LoadingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D89D7257BA7370098EF31 /* LoadingContentView.swift */; };
@@ -56,6 +57,7 @@
 		9E20295C256D78AD00A318BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E20295E256D78AD00A318BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E399CFC25828E3800C247B7 /* GKAuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKAuthenticationView.swift; sourceTree = "<group>"; };
+		9E399D3F2583FFA600C247B7 /* LoadingBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingBackgroundView.swift; sourceTree = "<group>"; };
 		9E531CDC2579521C00776DEB /* GradientButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonStyle.swift; sourceTree = "<group>"; };
 		9E5D89D2257BA6570098EF31 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		9E5D89D7257BA7370098EF31 /* LoadingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingContentView.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 		9E20294F256D78A300A318BF /* Find Balls */ = {
 			isa = PBXGroup;
 			children = (
+				9E399D3D2583FDF100C247B7 /* App */,
 				9EAE39E72576E786004A7483 /* Actions */,
 				9ED0D45E257E71C7004B3F88 /* Models */,
 				9ED0D4622581439A004B3F88 /* Services */,
@@ -168,8 +171,6 @@
 				9EAE39DF2576E542004A7483 /* Extentions */,
 				9E1334B22577EFEF00455797 /* Content */,
 				9E5F62BA257A813000119D83 /* Localization */,
-				9E202950256D78A300A318BF /* AppDelegate.swift */,
-				9E202952256D78A300A318BF /* SceneDelegate.swift */,
 				9EAE39F52577B6DD004A7483 /* TabBar.swift */,
 				9ED0D3B7257D47F7004B3F88 /* GoogleService-Info.plist */,
 				9E20295B256D78AD00A318BF /* LaunchScreen.storyboard */,
@@ -188,12 +189,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9E399D3D2583FDF100C247B7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9E202950256D78A300A318BF /* AppDelegate.swift */,
+				9E202952256D78A300A318BF /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		9E5D89E1257BB8770098EF31 /* Loading */ = {
 			isa = PBXGroup;
 			children = (
 				9E5D89DE257BB2620098EF31 /* LoadingView.swift */,
 				9E5D89D7257BA7370098EF31 /* LoadingContentView.swift */,
 				9ED0D43B257D66D8004B3F88 /* LoadingViewModel.swift */,
+				9E399D3F2583FFA600C247B7 /* LoadingBackgroundView.swift */,
 			);
 			path = Loading;
 			sourceTree = "<group>";
@@ -409,6 +420,7 @@
 				9E202951256D78A300A318BF /* AppDelegate.swift in Sources */,
 				9EAE39D92576B2FA004A7483 /* WelcomeView.swift in Sources */,
 				9E531CDD2579521C00776DEB /* GradientButtonStyle.swift in Sources */,
+				9E399D402583FFA600C247B7 /* LoadingBackgroundView.swift in Sources */,
 				9EAE39F02576F38A004A7483 /* VisualEffectView.swift in Sources */,
 				9EA19B8D257CE6E80002516A /* FindBallsApp.swift in Sources */,
 				9EAE39F62577B6DD004A7483 /* TabBar.swift in Sources */,
@@ -592,6 +604,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vladyslavlietun.FindBall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -615,6 +628,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vladyslavlietun.FindBall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
